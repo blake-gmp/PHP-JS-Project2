@@ -15,15 +15,7 @@ class Square extends Shape implements IShapeDrawSquare, IShapeSetColor
     if(!($this->checkSidesValue($this->length))) 
       return false;
 
-    switch($this->isRandom)
-    {
-      case true:
-        break;
-  
-      case false:
-        $this->draw();
-        break;
-    }
+    $this->draw();
   }
   
   public function getShapeName() : string {
