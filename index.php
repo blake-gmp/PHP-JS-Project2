@@ -22,7 +22,7 @@
 
       .block {
         margin-bottom: -20px;
-        background-color: black;
+        
       }
     </style>
 
@@ -35,23 +35,22 @@
       $rectangle1->setValueSide(3,3);
       $rectangle1->show();
 
-      echo $rectangle1->getShapeName(). " wysokość: ".$rectangle1->getValueSide()['height']." szerokość: ".$rectangle1->getValueSide()['width'];
+      echo $rectangle1->getShapeName(). " wysokość: ".$rectangle1->getValueSide()['height']." szerokość: ".$rectangle1->getValueSide()['width']."<br>";
 
       $square1 = new Square("test2");
-
       $square1->setValueSide(6);
+      $square1->setColorBlocks(209, 58, 25);
       $square1->show();
 
       $rectangle2 = new Rectangle("test3");
-
-      $rectangle2->setValueSide(6,7);
+      $rectangle2->setValueSide(6,20);
+      $rectangle2->setRandomColorsBlocks(true);
       $rectangle2->show();
 
       $rectangle3 = new Rectangle("test3");
-
-      $rectangle3->setValueSide(3,22);
+      $rectangle3->setValueSide(3,16);
       $rectangle3->show();
- 
+      //
     ?>
     </div>
     </body>
