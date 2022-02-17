@@ -2,14 +2,18 @@
 
 interface IShapeDrawRectangle
 {
-  public function enterLengthAndDraw($height, $width);
-  public function checkValues($height, $width);
+  public function checkSidesValue($height, $width);
+
+  public function getValueSide();
+  public function setValueSide($height, $width);
 }
 
 interface IShapeDrawSquare
 {
-  public function enterLengthAndDraw($length);
-  public function checkValues($length);
+  public function checkSidesValue($length);
+
+  public function getValueSide();
+  public function setValueSide($length);
 }
 
 ?>
