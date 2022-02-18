@@ -29,7 +29,8 @@
     <body>
     <div id="contener">
     <?php
-        
+      echo "PHP VERSION: ".phpversion()."<br>";
+
       $rectangle1 = new Rectangle("test");
       $rectangle1->setValueSide(3,3);
       $rectangle1->show();
