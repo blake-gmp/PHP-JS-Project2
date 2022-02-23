@@ -1,9 +1,13 @@
 <?php
 
+interface IDrawable
+{
+  public function draw();
+}
+
 interface IShapeDrawRectangle
 {
   public function checkIfSidesMoreThanZero($height, $width);
-  public function draw();
 
   public function getValueSide();
   public function setValueSide($height, $width);
@@ -12,7 +16,6 @@ interface IShapeDrawRectangle
 interface IShapeDrawSquare
 {
   public function checkIfSidesMoreThanZero($length);
-  public function draw();
 
   public function getLength();
   public function setLength($length);
@@ -25,7 +28,6 @@ interface IColorable
   public function setRandomColorsBlocks($bool);
 
   public function getColorHexValue();
-
   public function isColorValid($color);
 }
 

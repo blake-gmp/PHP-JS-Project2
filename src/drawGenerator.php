@@ -3,7 +3,7 @@
   require_once "src/abstract.php";
   require_once "src/interface.php";
 
-class Square extends Shape implements IShapeDrawSquare, IColorable
+class Square extends Shape implements IShapeDrawSquare, IColorable, IDrawable
 {
   protected $length = 0;
 
@@ -82,7 +82,7 @@ class Square extends Shape implements IShapeDrawSquare, IColorable
   }
 }
   
-class Rectangle extends Shape implements IShapeDrawRectangle, IColorable
+class Rectangle extends Shape implements IShapeDrawRectangle, IColorable, IDrawable
 {
   protected $height = 0;
   protected $width = 0;
