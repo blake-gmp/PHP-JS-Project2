@@ -2,7 +2,7 @@
 
 interface IShapeDrawRectangle
 {
-  public function checkSidesValue($height, $width);
+  public function checkIfSidesMoreThanZero($height, $width);
   public function draw();
 
   public function getValueSide();
@@ -11,20 +11,22 @@ interface IShapeDrawRectangle
 
 interface IShapeDrawSquare
 {
-  public function checkSidesValue($length);
+  public function checkIfSidesMoreThanZero($length);
   public function draw();
 
-  public function getValueSide();
-  public function setValueSide($length);
+  public function getLength();
+  public function setLength($length);
 }
 
-interface IShapeSetColor
+interface IColorable
 {
   public function setColorBlocks($color_red, $color_green, $color_blue);
   public function getColorBlocks();
   public function setRandomColorsBlocks($bool);
 
-  public function getRGBtoHex();
+  public function getColorHexValue();
+
+  public function isColorValid($color);
 }
 
 ?>

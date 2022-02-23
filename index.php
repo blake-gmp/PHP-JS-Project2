@@ -12,7 +12,7 @@
         padding: 0;
       }
 
-      #contener {
+      .contener {
         width: 80%;
         height: 100%;
         margin-right: auto;
@@ -27,7 +27,7 @@
 
     </head>
     <body>
-    <div id="contener">
+    <div class="contener">
     <?php
       echo "PHP VERSION: ".phpversion()."<br>";
 
@@ -38,7 +38,7 @@
       echo $rectangle1->getShapeName(). " wysokość: ".$rectangle1->getValueSide()['height']." szerokość: ".$rectangle1->getValueSide()['width']."<br>";
 
       $square1 = new Square("test2");
-      $square1->setValueSide(6);
+      $square1->setLength(6);
       $square1->setColorBlocks(209, 58, 25);
       $square1->show();
 
